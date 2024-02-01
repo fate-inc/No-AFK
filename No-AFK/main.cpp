@@ -1,16 +1,13 @@
 #include <iostream>
 #include <windows.h>
 
-void left_click() {
+void no_afk(WORD key) {
     INPUT input = { 0 };
-    input.type = INPUT_MOUSE;
-    input.mi.dwFlags = MOUSEEVENTF_LEFTDOWN;
+    input.type = INPUT_KEYBOARD;
+    input.ki.wVk = key;
     SendInput(1, &input, sizeof(INPUT));
-
-    // something i need
     Sleep(50);
-
-    input.mi.dwFlags = MOUSEEVENTF_LEFTUP;
+    input.ki.dwFlags = KEYEVENTF_KEYUP;
     SendInput(1, &input, sizeof(INPUT));
 }
 
@@ -25,7 +22,7 @@ int main() {
     }
 
     while (true) {
-        left_click();
+        no_afk(VK_PAUSE);
         
         Sleep(10000); 
     }
