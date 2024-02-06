@@ -1,5 +1,5 @@
 # No AFK
-
+[!NOTE]
 No AFK is a simple tool to keep your Discord status "Online" without having Discord change your status back to "idle" if you've been AFK for longer than 15 minutes.
 
 ## How to Use
@@ -10,7 +10,6 @@ No AFK is a simple tool to keep your Discord status "Online" without having Disc
 4. Run the `NO-AFK.exe` executable.
 5. Go AFK for as long as you want
 
-[!IMPORTANT]
 ## Usage
 
 After running `NO-AFK.exe`, type `!afk` in the console and press enter.
