@@ -11,5 +11,5 @@ No AFK is a simple tool to keep your Discord status "Online" without having Disc
 5. Go AFK for as long as you want
 
 ## Usage
-> [!IMPORTANT]
+> [!NOTE]
 After running `NO-AFK.exe`, type `!afk` in the console and press enter.
